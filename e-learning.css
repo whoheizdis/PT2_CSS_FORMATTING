@@ -206,6 +206,15 @@ h1#title-nav {
   margin: 0;
 }
 
+.lessons-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 1.5em;
+  color: #352481;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
 /*h2*/
 
 .header-h2 {
@@ -254,6 +263,16 @@ h1#title-nav {
   text-align:justify;
 }
 
+.lessons-p {
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 35px;
+  color: #352481;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-bottom:10px;
+  text-align:justify;
+}
+
 .resource-p {
   font-family: 'Jersey 10', sans-serif;
   font-size: 50px;
@@ -285,11 +304,39 @@ img#logo-nav {
   border-radius: 5px;
 }
 
-about-img {
+.about-img {
   border: 1px solid #352481;
   border-radius: 5px;
   float:left;
   margin-left:20px;
+}
+
+.tag-img {
+	height: 250px;
+    width: 250px;
+	border: 1px solid #352481;
+    border-radius: 5px;
+	float:right;
+	margin-left:10px;
+}
+
+.output-img {
+	height: 320px;
+    width: 320px;
+	border: 1px solid #352481;
+    border-radius: 5px;
+	float:right;
+	margin-top:10px;
+	margin-left:10px;
+	
+}
+
+.code-img {
+	height: 125px;
+    width: 100%;
+	border: 1px solid #352481;
+    border-radius: 5px;
+	margin:0;
 }
 
 /*hr*/
@@ -467,12 +514,38 @@ button:hover {
 	color: #b370e0;
 }
 
-.resource-ul {
-	list-style-image:url(ul.png);
+.resources-ul {
 	margin:0;
 }
 
-.resource-li {
-	list-style-image:;
-	text-align:center;
+.resources-li {
+	text-align:left;
+	color:#352481;
+	font-size:35px;
+}
+
+.attributes-table {
+  width: 100%;
+  border:2px solid #352481;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 35px;
+  text-align: left;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 10px;
+  border: 2px solid ;
+}
+
+td {
+color:#352481;
+}
+
+th {
+  color:white;
+  background-color:#352481;
+  letter-spacing:3px;
 }
