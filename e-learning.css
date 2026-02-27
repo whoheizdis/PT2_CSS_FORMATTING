@@ -424,40 +424,4 @@ button:hover {
   transition: 0.3s;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4ff;
-  margin: 40px;
-}
 
-h1 {
-  color: #352481;
-}
-
-.lesson-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.lesson-list li {
-  margin: 10px 0;
-}
-
-a {
-  text-decoration: none;
-  color: #DC77BB;
-  font-weight: bold;
-}
-
-a:hover {
-  color: #352481;
-}
-
-img {
-  margin: 20px 0;
-}
-
-.contact-item a:hover {
-  color: #DC77BB;
-
-}
