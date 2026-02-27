@@ -116,6 +116,23 @@ body {
   margin:auto;
 }
 
+.activity-div {
+  background-image: url(https://i.pinimg.com/736x/5c/0e/70/5c0e7061acca833fdfc362b75ae768ed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center;
+  border: 1px solid #352481;
+  border-radius: 10px;
+  box-shadow:3px 3px 10px #72689e;
+  padding:40px; 
+  width: 93%; 
+  margin:15px; 
+  text-align:center; 
+  margin-bottom: 20px;
+  line-height: 0.8;
+  margin:auto;
+}
+
 /* links */
 
 .nav-btn {
@@ -205,6 +222,16 @@ h1#title-nav {
   letter-spacing: 3px;
   margin: 0;
 }
+
+.activity-h1 {
+  font-family: 'Jersey 15', sans-serif;
+  font-size: 4em;
+  color: #5d1385;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+}
+
 
 .lessons-h1 {
   font-family: 'Jersey 15', sans-serif;
@@ -348,11 +375,19 @@ hr{
 	margin-bottom:20px;
 }
 
+.activity-hr{
+	background-color:#5d1385;
+	border: none;
+    height: 3px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+
 iframe#intro-vid {
   margin:0;
 }
 
-.register-form, .details-div {
+.register-form, .details-div, .video-div {
   margin: 50px auto;
   padding: 40px;
   background: rgba(255,255,255,0.6);
@@ -370,6 +405,11 @@ iframe#intro-vid {
   font-size:50px;
   width;80%;
   text-align:left;
+}
+
+.video-div {
+	width;80%;
+    text-align:center;
 }
 
 /* Each row */
