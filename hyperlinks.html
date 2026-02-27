@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="e-learning.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
+	<title>
+	  Coding Universe - Hyperlinks
+	</title>
+  </head>
+  <body>
+    <div class="nav-div">
+	  <div class="nav-left">
+        <img id="logo-nav" src="logo.png">
+        <h1 id="title-nav">Coding Universe</h1>
+      </div>
+	  <div class="nav-right">
+	    <a href="home.html" class="nav-btn">
+		  Home
+		</a>
+		<a href="about.html" class="nav-btn">
+		  About
+		</a>
+		<a href="lessons.html" class="nav-btn">
+		  Lessons
+	    </a>
+		<a href="resources.html" class="nav-btn">
+		  Resources
+		</a>
+		<a href="contact.html" class="nav-btn">
+		  Contact us
+		</a>
+      </div>
+    </div>
+	<div class="header-div">
+	  <h3 class="header-h3">
+	    Are you ready to Learn
+	  </h3>
+	  <h1 class="header-h1">
+	    Hyperlinks
+	  </h1>
+	</div>
+	<hr>
+	<div class="big-div">
+	  <h1 class="content-h1">
+	    Reading Material
+	  </h1>
+	  <hr>
+	  <div class="details-div">
+	    <h1 class="lessons-h1">
+		  What is a link?
+		</h1>
+		<img src="a-tag.png" class="tag-img">
+		<p class="lessons-p">
+		  HTML links, commonly called hyperlinks, are used to connect one webpage to another, enabling users to easily navigate between different pages, websites, or sections within the same page.
+		</p>
+		<p class="lessons-p">
+		  The [a] (anchor) tag creates hyperlinks
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">
+		    The most important attribute is the href attribute.
+		  </li>
+		  <li class="resources-li">
+		    By default, a linked page opens in the current browser window unless a different target is specified.
+		  </li>
+		  <li class="resources-li">
+		    A link isn’t limited to text—it can also be an image or any other HTML element.
+		  </li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  What does a link look like by default?
+		</h1>
+		<img src="hyperlink-code.png" class="code-img">
+		<img src="output-link.png" class="output-img">
+		<p class="lessons-p">
+		  By default, links will appear as follows in all browsers:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">
+		    An unvisited link is underlined and blue
+		  </li>
+		  <li class="resources-li">
+		    A visited link is underlined and purple
+		  </li>
+		  <li class="resources-li">
+		    An active link is underlined and red
+		  </li>
+		</ul>
+		<br>
+		<p class="lessons-p">
+		  You can change it by applying <i>pseudo-classes</i> (note: the states should be applied in this order)
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">
+		    a:link – unvisited link (blue)
+		  </li>
+		  <li class="resources-li">
+		    a:visited – visited link
+		  </li>
+		  <li class="resources-li">
+		    a:hover – when mouse is over the link
+		  </li>
+		  <li class="resources-li">
+		    a:active – when the link is being clicked
+		  </li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Attributes
+		</h1>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Attribute</th>
+			<th class="attributes-th">Value</th>
+			<th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">href</td>
+			<td class="attributes-th">url</td>
+			<td class="attributes-th">Specifies the URL of the page the link goes to</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">target</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">_self</li>
+				<li class="resources-li">_blank</li>
+		        <li class="resources-li">_parent</li>
+		        <li class="resources-li">_top</li>
+		      </ul>
+			</td>
+			<td class="attributes-th">Specifies where to open the linked document</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">rel</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">alternate</li>
+				<li class="resources-li">author</li>
+		        <li class="resources-li">bookmark</li>
+		        <li class="resources-li">external</li>
+				<li class="resources-li">help</li>
+				<li class="resources-li">license</li>
+		        <li class="resources-li">next</li>
+		        <li class="resources-li">nofollow</li>
+				<li class="resources-li">noreferrer</li>
+				<li class="resources-li">noopener</li>
+				<li class="resources-li">prev</li>
+		        <li class="resources-li">search</li>
+				<li class="resources-li">tag</li>
+		      </ul>
+			</td>
+			<td class="attributes-th">Specifies the relationship between the current document and the linked document</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">download</td>
+			<td class="attributes-th">filename</td>
+			<td class="attributes-th">Indicates that the linked resource will be downloaded when the user clicks on the hyperlink.</td>
+		  </tr>
+		</table>
+		<hr>
+		<h1 class="lessons-h1">
+		  Target Attribute Values
+		</h1>
+		<ul class="resources-ul">
+		  <li class="resources-li">
+		    _self - Opens the document in the same window/tab as it was clicked
+		  </li>
+		  <li class="resources-li">
+		    _blank - Opens the document in a new window or tab
+		  </li>
+		  <li class="resources-li">
+		    _parent - Opens the document in the parent frame
+		  </li>
+		  <li class="resources-li">
+		    _top - Opens the document in the full body of the window
+		  </li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Linking Different HTML Elements
+		</h1>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Element to Interlink</th>
+			<th class="attributes-th">Specific Code</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Linking to an image</td>
+			<td class="attributes-th">[a href="image.jpg"][img src="image.jpg" alt="Image"][/a]</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Link to an Email Address</td>
+			<td class="attributes-th">[a href="mailto:someone@example.com"]Send Email[/a]</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Phone Number</td>
+			<td class="attributes-th">[a href="tel:+1234567890"]Call Now[/a]</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Button</td>
+			<td class="attributes-th">[a href="https://www.example.com/"] [button]Visit Example[/button] [/a]</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Link to Download File</td>
+			<td class="attributes-th">[a href="file.pdf" download]Download File[/a]</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">Link Title</td>
+			<td class="attributes-th">[a href="https://www.example.com/" title="Visit Example"]Link Text[/a]</td>
+		  </tr>
+		</table>
+	  </div>
+	</div>
+    <div class="footer-div">
+	  <h1 class="footer-h1">
+	    Coding Universe
+	  </h1>
+	  <h2 class="footer-h2">
+	    helenamariebsamson@gmail.com || Helena Marie B. Samson || STE 9 - Assertiveness
+	  </h2>
+	  <h3 class="footer-h3">
+	    Copyright © 2026 Helena Marie B. Samson. All rights reserved. 
+	  </h3>
+	</div>
+  </body>
+</html>
