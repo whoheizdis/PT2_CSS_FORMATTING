@@ -254,6 +254,16 @@ h1#title-nav {
   text-align:justify;
 }
 
+.resource-p {
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 50px;
+  color: #352481;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-bottom:10px;
+  text-align:justify;
+}
+
 /* img */
 
 img#logo-nav {
@@ -436,3 +446,24 @@ button:hover {
 .contact-item a:hover {
   color: #DC77BB;
 }
+
+.topic-link {
+	text-decoration: none;
+}
+
+.topic-link:link {
+	color: #352481;
+}
+
+.topic-link:visited {
+	color: #ff92d0;
+}
+
+.topic-link:hover {
+	color: #8d9de7;
+}
+
+.topic-link:active {
+	color: #b370e0;
+}
+
