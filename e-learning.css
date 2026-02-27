@@ -322,7 +322,7 @@ iframe#intro-vid {
 .details-div {
   font-size:50px;
   width;80%;
-  text-align:center;
+  text-align:left;
 }
 
 /* Each row */
@@ -447,23 +447,32 @@ button:hover {
   color: #DC77BB;
 }
 
-.topic-link {
+.topic-link, .resources-a {
 	text-decoration: none;
 }
 
-.topic-link:link {
+.topic-link:link, .resources-a:link {
 	color: #352481;
 }
 
-.topic-link:visited {
+.topic-link:visited, .resources-a:visited {
 	color: #ff92d0;
 }
 
-.topic-link:hover {
+.topic-link:hover, .resources-a:hover {
 	color: #8d9de7;
 }
 
-.topic-link:active {
+.topic-link:active, .resources-a:active {
 	color: #b370e0;
 }
 
+.resource-ul {
+	list-style-image:url(ul.png);
+	margin:0;
+}
+
+.resource-li {
+	list-style-image:;
+	text-align:center;
+}
