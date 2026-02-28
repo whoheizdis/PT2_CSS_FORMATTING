@@ -48,10 +48,195 @@
 	  <hr>
 	  <div class="details-div">
 	    <h1 class="lessons-h1">
-		  text
+		  CSS Box Model
+		</h1>
+		<img src="box-model.png" class="tag-img">
+		<p class="lessons-p">
+		  The CSS Box Model is a fundamental concept used to describe the layout and spacing of HTML elements on a webpage. 
+		  Every HTML element is treated as a rectangular box that determines how elements are sized and positioned relative to others.
+		</p>
+		<p class="lessons-p">
+		  The box model is composed of four main parts:
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Content
+        </h2>
+		<p class="lessons-p">
+		  The content area is the innermost part of the box where text, images, or other elements appear. Developers can control the size of the content using properties like width and height.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Padding
+        </h2>
+		<p class="lessons-p">
+		  Padding is the space between the content and the border of an element. It creates internal spacing and contributes to the total size of the element.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Border
+        </h2>
+		<p class="lessons-p">
+		  The border surrounds the padding and content. It acts like a frame around the element and can have different styles, widths, and colors.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Margin
+        </h2>
+		<p class="lessons-p">
+		  The margin is the outermost layer of the box. It creates space between the element and surrounding elements on the webpage.
+		</p>
+		
+		<p class="lessons-p">
+		  Understanding the box model helps developers control spacing, alignment, and layout in web design.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Box Sizing in CSS
 		</h1>
 		<p class="lessons-p">
-		  text
+		  CSS also provides the box-sizing property, which determines how the total width and height of elements are calculated.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  content-box (default)
+        </h2>
+		<p class="lessons-p">
+		  In this mode, the specified width and height apply only to the content area. Padding and borders are added outside the content, increasing the total size of the element.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  border-box
+        </h2>
+		<p class="lessons-p">
+		  In this mode, padding and borders are included within the element’s total width and height, which makes layout calculations easier and more consistent.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  HTML Layout 
+		</h1>
+		<p class="lessons-p">
+		  An HTML layout organizes different sections of a webpage so that content is structured and easy to understand. 
+		  Web pages often display information in multiple sections or columns, similar to a magazine layout.
+		</p>
+		<p class="lessons-p">
+		  HTML provides semantic elements to define different parts of a webpage:
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Elements</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[header]</td>
+		    <td class="attributes-td">defines the top section or header of a page</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[nav]</td>
+		    <td class="attributes-td">contains navigation links or menus</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[section]</td>
+		    <td class="attributes-td">groups related content</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[article]</td>
+		    <td class="attributes-td">represents independent content like blog posts or news</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[aside]</td>
+		    <td class="attributes-td">contains side content such as sidebars</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">[footer]</td>
+		    <td class="attributes-td">defines the bottom section of a page</td>
+		  </tr>
+		</table>
+		<p class="lessons-p">
+		  These elements help create a clear structure and improve readability for both users and search engines.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Layout Techniques in Web Design
+		</h1>
+		<p class="lessons-p">
+		  There are several techniques used to design webpage layouts:
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  CSS Float
+        </h2>
+		<p class="lessons-p">
+		  The float property can position elements side-by-side to create simple layouts. However, it may be less flexible for modern designs.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Flexbox
+        </h2>
+		<p class="lessons-p">
+		  Flexbox is a layout system that makes it easier to align and distribute space between elements, especially when designing responsive websites.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  CSS Grid
+        </h2>
+		<p class="lessons-p">
+		  CSS Grid is a powerful layout system that allows developers to create complex layouts using rows and columns.
+		</p>
+		<br>
+		<p class="lessons-p">
+		  These modern techniques help websites adapt to different screen sizes and devices.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  CSS Background
+		</h1>
+		<p class="lessons-p">
+		  CSS background properties control the background appearance of HTML elements. Backgrounds can include colors, images, and positioning options.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Background Color
+        </h2>
+		<p class="lessons-p">
+		  The background-color property sets the background color of an element.
+		</p>
+		<img src="background-color.png" class="code-output-img">
+		<br>
+		<h2 class="lessons-h2">
+		  Background Image
+        </h2>
+		<p class="lessons-p">
+		  The background-image property adds an image as the background of an element.
+		</p>
+		<img src="background-image.png" class="code-output-img">
+		<br>
+		<h2 class="lessons-h2">
+		  Other Background Properties
+        </h2>
+		<p class="lessons-p">
+		  Other properties help control how the background behaves:
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Property</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">background-repeat</td>
+		    <td class="attributes-td">controls whether the image repeats</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">background-position</td>
+		    <td class="attributes-td">sets the location of the image</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">background-attachment</td>
+		    <td class="attributes-td">determines if the background scrolls or stays fixed</td>
+		  </tr>
+		</table>
+		<p class="lessons-p">
+		  CSS also provides a shorthand background property that combines several background properties into one line.
 		</p>
 	  </div>
 	  <h1 class="content-h1">
