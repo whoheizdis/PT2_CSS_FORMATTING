@@ -298,6 +298,17 @@ h1#title-nav {
   margin: 0;
   margin-bottom:10px;
   text-align:justify;
+  text-indent:50px;
+}
+
+.questions-p {
+  font-family: 'Jersey 10', sans-serif;
+  font-size: 35px;
+  color: #352481;
+  letter-spacing: 3px;
+  margin: 0;
+  margin-bottom:10px;
+  text-align:justify;
 }
 
 .resource-p {
@@ -360,6 +371,14 @@ img#logo-nav {
 
 .code-img {
 	height: 125px;
+    width: 100%;
+	border: 1px solid #352481;
+    border-radius: 5px;
+	margin:0;
+}
+
+.code-output-img {
+	height: auto;
     width: 100%;
 	border: 1px solid #352481;
     border-radius: 5px;
