@@ -48,11 +48,186 @@
 	  <hr>
 	  <div class="details-div">
 	    <h1 class="lessons-h1">
-		  text
+		  Introduction to CSS Selectors
 		</h1>
 		<p class="lessons-p">
-		  text
+		  CSS selectors are patterns used to select and target HTML elements so styles can be applied to them. 
+		  They tell the browser which elements on a webpage should receive specific styling rules such as colors, fonts, spacing, and layout.
 		</p>
+		<p class="lessons-p">
+		  Selectors help developers apply styles efficiently and consistently across a webpage. Without selectors, CSS would not know which elements should be styled.
+		</p>
+		<p class="lessons-p">
+		  CSS selectors can generally be grouped into five categories:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Simple selectors</li>
+		  <li class="resources-li">Combinator selectors</li>
+		  <li class="resources-li">Pseudo-class selectors</li>
+		  <li class="resources-li">Pseudo-element selectors</li>
+		  <li class="resources-li">Attribute selectors</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Simple Selectors
+		</h1>
+		<p class="lessons-p">
+		  Simple selectors select elements based on basic information like tag name, class, or ID.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Element Selector
+		</h2>
+		<p class="lessons-p">
+		  The element selector targets HTML elements by their tag name.
+		</p>
+		<img src="element-selector.png" class="code-img">
+		<p class="lessons-p">
+		  This example applies the style to all [p] elements on the page.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  ID Selector
+		</h2>
+		<p class="lessons-p">
+		  The ID selector selects a specific element using its unique id attribute.
+		</p>
+		<img src="id-selector.png" class="code-img">
+		<p class="lessons-p">
+		  Since IDs are unique, this selector usually targets one element only.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Class Selector
+		</h2>
+		<p class="lessons-p">
+		  The class selector selects elements with a specific class attribute.
+		</p>
+		<img src="class-selector.png" class="code-img">
+		<p class="lessons-p">
+		  Multiple elements can share the same class, allowing them to have the same style.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Universal Selector
+		</h2>
+		<p class="lessons-p">
+		  The universal selector (*) selects all elements on a webpage.
+		</p>
+		<img src="universal-selector.png" class="code-img">
+		<p class="lessons-p">
+		  This applies the style to every element on the page.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Grouping Selector
+		</h2>
+		<p class="lessons-p">
+		  The grouping selector applies the same styles to multiple elements by separating selectors with commas.
+		</p>
+		<img src="grouping-selector.png" class="code-img">
+		<p class="lessons-p">
+		  This reduces repeated code in CSS.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Combinator Selectors
+		</h1>
+		<p class="lessons-p">
+		  Combinator selectors define relationships between elements in the HTML structure.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Descendant Selector (space)
+		</h2>
+		<p class="lessons-p">
+		  Targets elements inside another element.
+		</p>
+		<img src="descendant-selector.png" class="code-img">
+		<p class="lessons-p">
+		  This selects all [p] elements inside a [div].
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Child Selector (>)
+		</h2>
+		<p class="lessons-p">
+		  Selects only direct children of a parent element.
+		</p>
+		<img src="child-selector.png" class="code-img">
+		<p class="lessons-p">
+		  Only [p] elements that are direct children of [div] are styled.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Adjacent Sibling Selector (+)
+		</h2>
+		<p class="lessons-p">
+		  Selects an element that comes immediately after another element.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  General Sibling Selector (~)
+		</h2>
+		<p class="lessons-p">
+		  Selects elements that share the same parent and appear after a specified element.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Attribute Selectors
+		</h1>
+		<p class="lessons-p">
+		  Attribute selectors target elements based on their attributes or attribute values.
+		</p>
+		<img src="attribute-selector.png" class="code-img">
+		<p class="lessons-p">
+		  This selector styles only [input] elements where the type attribute is "text".
+		</p>
+		<p class="lessons-p">
+		  Attribute selectors can also:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Select elements with a specific attribute</li>
+		  <li class="resources-li">Select elements with a specific attribute value</li>
+		  <li class="resources-li">Match attribute values that start, end, or contain certain text.</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Pseudo-Class and Pseudo-Element Selectors
+		</h1>
+		<p class="lessons-p">
+		  These selectors target elements based on state or specific parts of elements.
+		</p>
+		<br>
+		<h2 class="lessons-h2">
+		  Pseudo-class
+		</h2>
+		<p class="lessons-p">
+		  Pseudo-classes style elements in a specific state.
+		</p>
+		<p class="lessons-p">
+		  Examples:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">:hover – when the mouse is over an element</li>
+		  <li class="resources-li">:active – when an element is being clicked</li>
+		  <li class="resources-li">:visited – links that have already been visited</li>
+		</ul>
+		<br>
+		<h2 class="lessons-h2">
+		  Pseudo-Element
+		</h2>
+		<p class="lessons-p">
+		  Pseudo-elements style specific parts of an element.
+		</p>
+		<p class="lessons-p">
+		  Examples:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">::first-letter – styles the first letter of text</li>
+		  <li class="resources-li">::before – inserts content before an element</li>
+		  <li class="resources-li">::after – inserts content after an element</li>
+		</ul>
 	  </div>
 	  <h1 class="content-h1">
 	    Video Material
