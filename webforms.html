@@ -48,11 +48,195 @@
 	  <hr>
 	  <div class="details-div">
 	    <h1 class="lessons-h1">
-		  text
+		  Introduction to HTML Forms
+		</h1>
+		<img src="form-tag.png" class="tag-img">
+		<p class="lessons-p">
+		  HTML forms are used to collect user input on a webpage. The information entered by users (such as names, emails, or passwords) is usually sent to a server for processing.
+		</p>
+		<p class="lessons-p">
+		  Forms are commonly used for:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">
+		    Log in pages
+		  </li>
+		  <li class="resources-li">
+		    Registration Forms
+		  </li>
+		  <li class="resources-li">
+		    Surveys
+		  </li>
+		  <li class="resources-li">
+		    Search Boxes
+		  </li>
+		</ul>
+		<br>
+		<p class="lessons-p">
+		  An HTML form is created using the [form] element, which acts as a container for different input elements like text fields, checkboxes, radio buttons, and submit buttons.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  The [form] Element
 		</h1>
 		<p class="lessons-p">
-		  text
+		  The [form] tag defines an HTML form where users can enter and submit data. It groups together all the input controls that collect information.
 		</p>
+		<img src="form-code.png" class="code-output-img">
+		<p class="lessons-p">
+		  When the user submits the form, the browser sends the data to a server or another webpage for processing.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Common HTML Form Elements
+		</h1>
+		<p class="lessons-p">
+		  Forms contain different elements that allow users to enter or select information.
+		</p>
+		<p class="lessons-p">
+		  [input] - The most commonly used form element. It creates different input controls depending on the type attribute.
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Value</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">text</td>
+		    <td class="attributes-td">single-line text field</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">radio</td>
+		    <td class="attributes-td">select one option from many</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">chechkbox</td>
+		    <td class="attributes-td">select multiple options</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">submit</td>
+		    <td class="attributes-td">button that submits the form</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">button</td>
+		    <td class="attributes-td">clickable button</td>
+		  </tr>
+		</table>
+		<p class="lessons-p">
+		  [label] - Defines a label for an input field and improves accessibility by helping screen readers identify the input.
+		</p>
+		<br>
+		<p class="lessons-p">
+		  [select] and [option] - Used to create dropdown lists where users can select one option.
+		</p>
+		<br>
+		<p class="lessons-p">
+		  [textarea] - Creates a multi-line text input field.
+		</p>
+		<br>
+		<p class="lessons-p">
+		  [button] - Creates a clickable button that can trigger actions or submit the form.
+		</p>
+		<br>
+		<p class="lessons-p">
+		  [fieldset] and [legend]
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">[fieldset] - groups related form elements</li>
+		  <li class="resources-li">[legend] - provides a title or caption for the group</li>
+		</ul>
+		<br>
+		<p class="lessons-p">
+		  [datalist] and [output]
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">[datalist] - provides predefined suggestions for input fields</li>
+		  <li class="resources-li">[output] - displays the result of calculations or scripts</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Important Form Attributes
+		</h1>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Attribute</th>
+			<th class="attributes-th">Value</th>
+			<th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">action</td>
+			<td class="attributes-th">
+			  url
+			  <ul class="resources-ul">
+			    <li class="resources-li">An absolute URL - points to another web site (like action="http://www.example.com/example.htm")</li>
+				<li class="resources-li">A relative URL - points to a file within a web site (like action="example.htm")</li>
+			  </ul>
+			</td>
+			<td class="attributes-th">Specifies where the form data will be sent after submission. If not specified, the data is sent to the current page.</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">method</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">get - sends data through the URL</li>
+				<li class="resources-li">post - sends data securely in the request body</li>
+		      </ul>
+			</td>
+			<td class="attributes-th">Defines the HTTP method used to send data</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">target</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">_blank - The response is displayed in a new window or tab</li>
+				<li class="resources-li">_self - The response is displayed in the current window (default)</li>
+				<li class="resources-li">_parent - 	The response is displayed in the parent frame</li>
+				<li class="resources-li">_top - The response is displayed in the full body of the window</li>
+				<li class="resources-li">framename - The response is displayed in a named iframe</li>
+		      </ul>
+			</td>
+			<td class="attributes-th">Specifies where the response should appear after the form is submitted, such as:</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">autocomplete</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">on</li>
+				<li class="resources-li">off</li></td>
+			  </ul>
+			<td class="attributes-th">Determines whether the browser should automatically fill in previously entered values.</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">novalidate</td>
+			<td class="attributes-th">boolean attribute (its mere presence indicates true, while its absence signifies false)</td>
+			<td class="attributes-th">Specifies that the form should not validate input data before submission.</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-th">enctype</td>
+			<td class="attributes-th">
+			  <ul class="resources-ul">
+		        <li class="resources-li">application/x-www-form-urlencoded</li>
+				<li class="resources-li">multipart/form-data</li></td>
+				<li class="resources-li">text/plain</li></td>
+			  </ul>
+			</td>
+			<td class="attributes-th">Defines how the form data should be encoded when it is sent to the server, especially when uploading files.</td>
+		  </tr>
+		</table>
+		<hr>
+		<h1 class="lessons-h1">
+		  How Forms Work
+		</h1>
+		<p class="lessons-p">
+		  The general process of an HTML form is:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">The user enters information in the form fields.</li>
+		  <li class="resources-li">The user clicks the submit button.</li>
+		  <li class="resources-li">The browser sends the data to the server using the method specified in the form.</li>
+		  <li class="resources-li">The server processes the data and returns a response.</li>
+		</ul>
+		<hr>
 	  </div>
 	  <h1 class="content-h1">
 	    Video Material
@@ -72,56 +256,56 @@
 		    <label>Name:</label>
 		    <input type="text" placeholder="Enter your name">
           </div>
-		  <p class="lessons-p">
-		    1. 
+		  <p class="questions-p">
+		    1. What is the main purpose of an HTML form?
 			<br>
-		      <label><input type="radio" name="q1">A. </label>
+		      <label><input type="radio" name="q1">A. To style webpages with colors and fonts</label>
 			  <br>
-			  <label><input type="radio" name="q1">B. </label>
+			  <label><input type="radio" name="q1">B. To collect user input and send it to a server</label>
 			  <br>
-			  <label><input type="radio" name="q1">C. </label>
+			  <label><input type="radio" name="q1">C. To create animations on webpages</label>
 			  <br>
-			  <label><input type="radio" name="q1">D. </label>
+			  <label><input type="radio" name="q1">D. To display images on a webpage</label>
 			<br>
-		    2. Which HTML tag is used to create a hyperlink?
+		    2. Which HTML tag is used to create a form?
 			<br>
-		      <label><input type="radio" name="q2">A. </label>
+		      <label><input type="radio" name="q2">A. [input]</label>
 			  <br>
-			  <label><input type="radio" name="q2">B. </label>
+			  <label><input type="radio" name="q2">B. [form]</label>
 			  <br>
-			  <label><input type="radio" name="q2">C. </label>
+			  <label><input type="radio" name="q2">C. [label]</label>
 			  <br>
-			  <label><input type="radio" name="q2">D. </label>
+			  <label><input type="radio" name="q2">D. [fieldset]</label>
 			<br>
-		    3. 
+		    3. Which element is used to create a dropdown list in a form?
 			<br>
-		      <label><input type="radio" name="q3">A. </label>
+		      <label><input type="radio" name="q3">A. [textarea]</label>
 			  <br>
-			  <label><input type="radio" name="q3">B. </label>
+			  <label><input type="radio" name="q3">B. [button]</label>
 			  <br>
-			  <label><input type="radio" name="q3">C. </label>
+			  <label><input type="radio" name="q3">C. [select]</label>
 			  <br>
-			  <label><input type="radio" name="q3">D. </label>
+			  <label><input type="radio" name="q3">D. [legend]</label>
 			<br>
-		    4. 
+		    4. Which attribute specifies where the form data will be sent after submission? 
 			<br>
-		      <label><input type="radio" name="q4">A. </label>
+		      <label><input type="radio" name="q4">A. method</label>
 			  <br>
-			  <label><input type="radio" name="q4">B. </label>
+			  <label><input type="radio" name="q4">B. action</label>
 			  <br>
-			  <label><input type="radio" name="q4">C. </label>
+			  <label><input type="radio" name="q4">C. target</label>
 			  <br>
-			  <label><input type="radio" name="q4">D. </label>
+			  <label><input type="radio" name="q4">D. name</label>
 			<br>
-		    5. 
+		    5. Which HTTP method sends form data through the URL?
 			<br>
-		      <label><input type="radio" name="q5"></label>
+		      <label><input type="radio" name="q5">POST</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">PUT</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">GET</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">PATCH</label>
 			<br>
           </p>
 		<button class="register-btn">Submit</button>
@@ -140,5 +324,4 @@
 	  </h3>
 	</div>
   </body>
-
 </html>
