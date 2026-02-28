@@ -48,11 +48,165 @@
 	  <hr>
 	  <div class="details-div">
 	    <h1 class="lessons-h1">
-		  text
+		  Introduction to CSS
 		</h1>
 		<p class="lessons-p">
-		  text
+		  CSS stands for <b>Cascading Style Sheets</b>, a language used to style and design web pages. 
+		  It controls how HTML elements are displayed on the screen, such as colors, fonts, spacing, and layout.
 		</p>
+		<p class="lessons-p">
+		  CSS works together with HTML and JavaScript:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">HTML provides the structure of the webpage</li>
+		  <li class="resources-li">CSS controls the appearance and design</li>
+		  <li class="resources-li">JavaScript adds interactivity and behavior</li>
+		</ul>
+		<br>
+		<p class="lessons-p">
+		  By separating design from content, CSS allows developers to easily manage and update the look of multiple pages at once.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Why CSS is Used
+		</h1>
+		<p class="lessons-p">
+		  CSS is widely used in web development because it helps create visually appealing and well-organized websites.
+		</p>
+		<p class="lessons-p">
+		  Some reasons for using CSS include:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Better design and layout of webpages</li>
+		  <li class="resources-li">Consistent styling across multiple pages</li>
+		  <li class="resources-li">Faster website maintenance since styles can be changed in one file</li>
+		  <li class="resources-li">Improved performance and user experience</li>
+		  <li class="resources-li">Responsive design that adapts to different screen sizes and devices</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  How CSS Works
+		</h1>
+		<p class="lessons-p">
+		  CSS applies styles to HTML elements using rules and selectors. A selector identifies which HTML element should receive the style.
+		</p>
+		<p class="lessons-p">
+		  When a webpage loads:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">The browser loads and reads the HTML file.</li>
+		  <li class="resources-li">The browser loads any CSS files linked to the page.</li>
+		  <li class="resources-li">The browser matches CSS rules to HTML elements.</li>
+		  <li class="resources-li">The final styles are applied and displayed on the screen.</li>
+		</ul>
+		<p class="lessons-p">
+		  This process allows the browser to turn a plain webpage into a visually styled layout.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  CSS Syntax and Rules
+		</h1>
+		<p class="lessons-p">
+		  CSS is written using rulesets, which consist of a selector and declarations.
+		</p>
+		<img src="css-syntax.png" class="code-img">
+		<img src="css-syntax-example.png" class="code-img">
+		<p class="lessons-p">
+		  Parts of CSS syntax:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Selector – the HTML element being styled</li>
+		  <li class="resources-li">Property – the style being changed (color, font, size, etc.)</li>
+		  <li class="resources-li">Value – the setting applied to the property</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  Ways to Add CSS to HTML
+		</h1>
+		<p class="lessons-p">
+		  CSS can be added to HTML in three main ways:
+		</p>
+		<p class="lessons-p">
+		  <b>Inline CSS</b> - Applied directly inside an HTML element using the style attribute.
+		</p>
+		<img src="css-inline.png" class="code-img">
+		<br>
+		<p class="lessons-p">
+		  <b>Internal CSS</b> - Placed inside a [style] tag within the [head] section of an HTML document.
+		</p>
+		<img src="css-internal.png" class="code-img">
+		<br>
+		<p class="lessons-p">
+		  <b>External CSS</b> - Stored in a separate .css file and linked to the HTML file. External CSS is the most common method because it allows one stylesheet to control multiple pages.
+		</p>
+		<img src="css-external.png" class="code-img">
+		<hr>
+		<h1 class="lessons-h1">
+		  CSS Selectors
+		</h1>
+		<p class="lessons-p">
+		  Selectors are patterns used to choose which HTML elements will receive specific styles.
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Selector</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">Element selector</td>
+		    <td class="attributes-td">selects elements by tag name</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">Class selector</td>
+		    <td class="attributes-td">selects elements with a specific class</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">ID selector</td>
+		    <td class="attributes-td">selects an element with a unique ID</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">Attribute selectors</td>
+		    <td class="attributes-td">target elements with specific attributes</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">Pseudo-classes and pseudo-elements</td>
+		    <td class="attributes-td">style elements in special states or parts (like :hover or ::first-letter)</td>
+		  </tr>
+		</table>
+		<hr>
+		<h1 class="lessons-h1">
+		  The Cascading Concept
+		</h1> 
+		<p class="lessons-p">
+		  The word “cascading” refers to how CSS decides which style rule should apply when multiple rules target the same element.
+		</p>
+		<p class="lessons-p">
+		  Priority depends on:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Inline styles</li>
+		  <li class="resources-li">Internal styles</li>
+		  <li class="resources-li">External styles</li>
+		  <li class="resources-li">Selector specificity</li>
+		  <li class="resources-li">Source order (later rules can override earlier ones)</li>
+		</ul>
+		<p class="lessons-p">
+		  This system ensures the correct styles are applied to each element.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Advantages of CSS
+		</h1>
+		<p class="lessons-p">
+		  CSS provides several advantages in web development:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Separates content from design</li>
+		  <li class="resources-li">Makes websites easier to maintain</li>
+		  <li class="resources-li">Reduces repeated code</li>
+		  <li class="resources-li">Allows responsive layouts for different devices</li>
+		  <li class="resources-li">Improves performance and readability of web pages</li>
+		</ul>
 	  </div>
 	  <h1 class="content-h1">
 	    Video Material
