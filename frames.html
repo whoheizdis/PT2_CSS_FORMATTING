@@ -48,11 +48,148 @@
 	  <hr>
 	  <div class="details-div">
 	    <h1 class="lessons-h1">
-		  text
+		  Introduction to Frames
+		</h1>
+		<img src="frameset.png" class="tag-img">
+		<p class="lessons-p">
+		  HTML frames were used to divide a browser window into multiple rectangular sections, where each section could load a separate HTML document independently. 
+		  This allowed developers to display multiple pages within a single browser window and create multi-pane layouts for websites.
+		</p>
+		<p class="lessons-p">
+		  Frames were commonly used to keep certain elements visible while others changed.
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">For example, a website could have a navigation menu in one frame while the main content loads in another frame when links are clicked.</li>
+		</ul>
+		</br>
+		<p class="lessons-p"> 
+		  The [frame] tag is no longer recommended as it is not supported by HTML5, modern web development recommends using techniques like CSS layouts or iframes instead.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Frameset Documents
+		</h1>
+		<img src="frameset-tag.png" class="tag-img">
+		<p class="lessons-p">
+		  A page that uses frames is called a frameset document. 
+		  Instead of the normal [body] element, it uses the [frameset] element to define how the browser window is divided.
+		</p>
+		<p class="lessons-p">
+		  The [frameset] tag determines the layout of the frames by specifying rows or columns that divide the window into sections. Each section can then contain a separate HTML document.
+		</p>
+		<p class="lessons-p">
+		  Framesets can also be nested, allowing more complex layouts with multiple rows and columns inside other frames.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  The [frameset] Tag
 		</h1>
 		<p class="lessons-p">
-		  text
+		  The [frameset] tag defines how the browser window is divided into frames. Instead of placing content directly in the page, it organizes the layout structure of frames.
 		</p>
+		<p class="lessons-p">
+		  Common Attributes
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Attribute</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">rows</td>
+		    <td class="attributes-td">divides the window horizontally into rows</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">cols</td>
+		    <td class="attributes-td">divides the window vertically into columns</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">border</td>
+		    <td class="attributes-td">sets the border width of frames</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">frameborder</td>
+		    <td class="attributes-td">enables or disables borders between frames</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">framespacing</td>
+		    <td class="attributes-td">controls spacing between frames</td>
+		  </tr>
+		</table>
+		<p class="lessons-p">
+		  Frame sizes can be defined using:
+		</p>
+		<ul class="resources-ul">
+		  <li class="resources-li">Pixels (px)</li>
+		  <li class="resources-li">Percentages (%)</li>
+		  <li class="resources-li">Relative values using *</li>
+		</ul>
+		<hr>
+		<h1 class="lessons-h1">
+		  The [frame] Tag
+		</h1>
+		<p class="lessons-p">
+		  The [frame] tag is used inside a [frameset] to define each individual frame and load a specific document into it. Each frame functions independently and can display different content.
+		</p>
+		<p class="lessons-p">
+		  Common Attributes
+		</p>
+		<table class="attributes-table">
+		  <tr>
+		    <th class="attributes-th">Attribute</th>
+		    <th class="attributes-th">Description</th>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">src</td>
+		    <td class="attributes-td">specifies the URL of the document to display in the frame</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">name</td>
+		    <td class="attributes-td">gives a name to the frame so links can target it</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">scrolling</td>
+		    <td class="attributes-td">controls whether scrollbars appear</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">marginwidth / marginheight</td>
+		    <td class="attributes-td">defines spacing between frame borders and content</td>
+		  </tr>
+		  <tr>
+		    <td class="attributes-td">frameborder</td>
+		    <td class="attributes-td">controls frame borders</td>
+		  </tr>
+		</table>
+		<hr>
+		<h1 class="lessons-h1">
+		  The [noframes] Element
+		</h1>
+		<p class="lessons-p">
+		  The [noframes] element provides alternative content for browsers that do not support frames. This ensures users can still access some information even if frames cannot be displayed.
+		</p>
+		<hr>
+		<h1 class="lessons-h1">
+		  Frame Layout Examples
+		</h1>
+		<p class="lessons-p">
+		  Frames can be arranged in horizontal rows or vertical columns.
+		</p>
+		<p class="lessons-p">
+		  Horizontal Frames - Use the rows attribute to divide the page into horizontal sections.
+		</p>
+		<img src="row-frameset-code.png" class="code-output-img">
+		<br>
+		<br>
+		<p class="lessons-p">
+		  Vertical Frames - Use the cols attribute to divide the page vertically.
+		</p>
+		<img src="col-frameset-code.png" class="code-output-img">
+		<br>
+		<br>
+		<p class="lessons-p">
+		  Nested frames
+		</p>
+		<img src="nest-frameset-code.png" class="code-output-img">
 	  </div>
 	  <h1 class="content-h1">
 	    Video Material
@@ -72,56 +209,56 @@
 		    <label>Name:</label>
 		    <input type="text" placeholder="Enter your name">
           </div>
-		  <p class="lessons-p">
-		    1. 
+		  <p class="questions-p">
+		    1. What is the main purpose of HTML frames?
 			<br>
-		      <label><input type="radio" name="q1">A. </label>
+		      <label><input type="radio" name="q1">A. To add animations to webpages</label>
 			  <br>
-			  <label><input type="radio" name="q1">B. </label>
+			  <label><input type="radio" name="q1">B. To divide a browser window into multiple sections displaying different HTML documents</label>
 			  <br>
-			  <label><input type="radio" name="q1">C. </label>
+			  <label><input type="radio" name="q1">C. To style webpages using colors and fonts</label>
 			  <br>
-			  <label><input type="radio" name="q1">D. </label>
+			  <label><input type="radio" name="q1">D. To create hyperlinks between pages</label>
 			<br>
-		    2. Which HTML tag is used to create a hyperlink?
+		    2. Which tag is used to define how a webpage is divided into frames?
 			<br>
-		      <label><input type="radio" name="q2">A. </label>
+		      <label><input type="radio" name="q2">A. [body]</label>
 			  <br>
-			  <label><input type="radio" name="q2">B. </label>
+			  <label><input type="radio" name="q2">B. [div]</label>
 			  <br>
-			  <label><input type="radio" name="q2">C. </label>
+			  <label><input type="radio" name="q2">C. [frameset]</label>
 			  <br>
-			  <label><input type="radio" name="q2">D. </label>
+			  <label><input type="radio" name="q2">D. [section]</label>
 			<br>
-		    3. 
+		    3. Which attribute of the [frameset] tag divides the page into horizontal sections?
 			<br>
-		      <label><input type="radio" name="q3">A. </label>
+		      <label><input type="radio" name="q3">A. cols</label>
 			  <br>
-			  <label><input type="radio" name="q3">B. </label>
+			  <label><input type="radio" name="q3">B. rows</label>
 			  <br>
-			  <label><input type="radio" name="q3">C. </label>
+			  <label><input type="radio" name="q3">C. border</label>
 			  <br>
-			  <label><input type="radio" name="q3">D. </label>
+			  <label><input type="radio" name="q3">D. scrolling</label>
 			<br>
-		    4. 
+		    4. What does the [frame] tag do?
 			<br>
-		      <label><input type="radio" name="q4">A. </label>
+		      <label><input type="radio" name="q4">A. Styles the layout of a webpage</label>
 			  <br>
-			  <label><input type="radio" name="q4">B. </label>
+			  <label><input type="radio" name="q4">B. Creates a hyperlink</label>
 			  <br>
-			  <label><input type="radio" name="q4">C. </label>
+			  <label><input type="radio" name="q4">C. Loads a specific HTML document inside a frame</label>
 			  <br>
-			  <label><input type="radio" name="q4">D. </label>
+			  <label><input type="radio" name="q4">D. Adds images to a webpage</label>
 			<br>
-		    5. 
+		    5. Why are HTML frames rarely used today?
 			<br>
-		      <label><input type="radio" name="q5"></label>
+		      <label><input type="radio" name="q5">They are too difficult to code</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">They are deprecated in HTML5 and replaced by modern layout techniques like CSS and iframes</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">They only work on mobile devices</label>
 			  <br>
-			  <label><input type="radio" name="q5"></label>
+			  <label><input type="radio" name="q5">They cannot display multiple pages</label>
 			<br>
           </p>
 		<button class="register-btn">Submit</button>
